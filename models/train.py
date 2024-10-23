@@ -27,4 +27,4 @@ def train_model(data_file, input_dim, embedding_dim, hidden_dim, output_dim, epo
     torch.save(model.state_dict(), 'saved_models/sentiment_model.pth')
 
 if __name__ == "__main__":
-    train_model('data/sentiment_data.csv', input_dim=5000, embedding_dim=100, hidden_dim=256, output_dim=3)
+    train_model('data/IMDBDataset.csv', input_dim=5000, embedding_dim=100, hidden_dim=256, output_dim=3)
